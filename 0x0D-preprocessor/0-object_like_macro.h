@@ -1,18 +1,6 @@
-#include "dog.h"
-#include <stdlib.h>
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
 
-/**
- * free_dog - frees dogs.
- * @d: struct dog.
- *
- * Return: no return.
- */
-void free_dog(dog_t *d)
-{
-	if (d)
-	{
-		free(d->name);
-		free(d->owner);
-		free(d);
-	}
-}
+#define SIZE 1024
+
+#endif
